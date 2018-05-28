@@ -37,7 +37,8 @@
       },
       "electronPackagerConfig": {
         "name": "Prototypo",
-        "icon": "./icon"
+        "icon": "./icon",        
+        "packageManager": "yarn"
       },
       "electronWinstallerConfig": {
         "name": "Prototypo",
