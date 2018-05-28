@@ -13,7 +13,7 @@ function createWindow() {
     minWidth: 1450,
     minHeight: 1000,
     backgroundColor: '#fff',
-    webPreferences: { devTools: true },
+    webPreferences: { devTools: false, nativeWindowOpen: true },
   });
 
   session.defaultSession.webRequest.onBeforeSendHeaders((details, callback) => {
@@ -23,8 +23,10 @@ function createWindow() {
   });
 
   win.webContents.on('new-window', (e, url) => {
-    e.preventDefault();
-    shell.openExternal(url);
+    if (!url.includes('google') && !url.includes('facebook') && !url.includes('about')) {
+      e.preventDefault();
+      shell.openExternal(url);
+    }    
   });
 
   win.loadURL('https://app.prototypo.io');
