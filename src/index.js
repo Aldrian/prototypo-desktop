@@ -12,8 +12,8 @@ function createWindow() {
     height: 1000,
     minWidth: 1450,
     minHeight: 1000,
-    backgroundColor: '#3b3b3b',
-    webPreferences: { devTools: false },
+    backgroundColor: '#fff',
+    webPreferences: { devTools: true },
   });
 
   session.defaultSession.webRequest.onBeforeSendHeaders((details, callback) => {
