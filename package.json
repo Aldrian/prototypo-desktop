@@ -46,7 +46,9 @@
         "iconUrl": "http://localhost:5000/icon.ico",
         "setupIcon": "./icon.ico",
         "certificatePassword": "prototypo",
-        "certificateFile": "./prototypo.pfx"
+        "certificateFile": "./prototypo.pfx",
+        "timeStampServer": "http://timestamp.digicert.com"
+
       },
       "electronInstallerDMG": {
         "icon": "./icon.icns",
