@@ -38,7 +38,10 @@
       "electronPackagerConfig": {
         "name": "Prototypo",
         "icon": "./icon",
-        "packageManager": "yarn"
+        "packageManager": "yarn",
+        "osxSign": {
+          "identity": "Developer ID Application: Prototypo (F8X6N54V99)"
+        }
       },
       "electronWinstallerConfig": {
         "name": "Prototypo",
@@ -52,11 +55,15 @@
       },
       "electronInstallerDMG": {
         "icon": "./icon.icns",
-        "background": "mac_install_prototypo.png",
-        "osxSign": true
+        "background": "mac_install_prototypo.png"
       },
-      "electronInstallerDebian": {},
-      "electronInstallerRedhat": {},
+      "electronInstallerDebian": {
+        "dest": "./out/make/",
+        "icon": "./icon.png",
+        "categories": [
+          "Graphics"
+        ]
+      },
       "github_repository": {
         "owner": "yorunohikage",
         "name": "prototypo-desktop"
