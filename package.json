@@ -11,7 +11,7 @@
     "electron-compile": "^6.4.2"
   },
   "devDependencies": {
-    "electron-forge": "^4.1.2",
+    "electron-forge": "^5.2.2",
     "electron-prebuilt-compile": "1.7.9"
   },
   "scripts": {
@@ -37,14 +37,16 @@
       },
       "electronPackagerConfig": {
         "name": "Prototypo",
-        "icon": "./icon",        
+        "icon": "./icon",
         "packageManager": "yarn"
       },
       "electronWinstallerConfig": {
         "name": "Prototypo",
         "loadingGif": "loading.gif",
         "iconUrl": "http://localhost:5000/icon.ico",
-        "setupIcon": "./icon.ico"
+        "setupIcon": "./icon.ico",
+        "certificatePassword": "prototypo",
+        "certificateFile": "./prototypo.pfx"
       },
       "electronInstallerDMG": {
         "icon": "./icon.icns",
