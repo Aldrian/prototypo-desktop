@@ -1,6 +1,6 @@
 {
   "name": "prototypo-desktop",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Create your own fonts in a few clicks on your desktop",
   "main": "src/index.js",
   "repository": "https://github.com/byte-foundry/prototypo-desktop",
@@ -52,6 +52,7 @@
       },
       "electronInstallerDMG": {
         "icon": "./icon.icns",
+        "background": "mac_install_prototypo.png",
         "osxSign": true
       },
       "electronInstallerDebian": {},
