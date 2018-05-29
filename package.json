@@ -50,6 +50,7 @@
       },
       "electronInstallerDMG": {
         "icon": "./icon.icns",
+        "background": "mac_install_prototypo.png",
         "osxSign": true
       },
       "electronInstallerDebian": {},
